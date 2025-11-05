@@ -1,0 +1,95 @@
+/* Reset dasar & Font */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* ====== HEADER ====== */
+header {
+    background-color: #4A90E2; /* Warna biru */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ====== LAYOUT UTAMA (MAIN & ASIDE) MENGGUNAKAN FLEXBOX ====== */
+/* Ini adalah bagian terpenting untuk kriteria layout  */
+main {
+    display: flex;
+    margin: 20px;
+}
+
+/* Konten utama (kiri) */
+#content {
+    flex: 3; /* Lebar 3 bagian */
+    margin-right: 20px;
+}
+
+/* Sidebar (kanan) */
+aside {
+    flex: 1; /* Lebar 1 bagian */
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* ====== ARTICLE (Postingan Blog) ====== */
+article {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+article header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+article header h2 {
+    margin-top: 0;
+}
+
+article header p {
+    font-size: 0.9em;
+    color: #888;
+}
+
+
+/* ====== ASIDE (Foto Penulis) ====== */
+.profile-photo {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%; /* Membuat foto bulat */
+    margin-bottom: 10px;
+    border: 3px solid #ddd;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
